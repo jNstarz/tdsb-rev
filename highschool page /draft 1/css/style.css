@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Belanosima', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0 20px; /*  margins will be on all sides */
+}
+
+
+
+
+
+
+
+
+
+/* Header */
+.main-header {
+    display: flex; /* i learned this from one of my best firends whos in cs majors */
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+#logo img {
+    width: 350px;
+}
+
+#translate {
+    display: flex; /* i learned this from one of my best firends whos in cs majors */
+    justify-content: center;
+    align-items: center;
+}
+
+#translate input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#translate button {
+    padding: 5px 10px;
+    background-color: #aaa;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Navigation Section */
+.menu-bar {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex; /* i learned this from one of my best firends whos in cs majors */
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.menu-bar ul li {
+    margin: 0 15px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #205c89;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.color-bars {
+    display: flex; /* i learned this from one of my best firends whos in cs majors */
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.color-bar {
+    height: 18px;
+    width: 19%;
+}
+
+.color-bar-1 { background-color: #f4e146; }
+.color-bar-2 { background-color: #6dae65; }
+.color-bar-3 { background-color: #d8955c; }
+.color-bar-4 { background-color: #475f9c; }
+.color-bar-5 { background-color: #b5513f; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Student Banner Section */
+#banner {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.banner-content {
+    display: flex; /* i learned this from one of my best firends whos in cs majors */
+    justify-content: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 450px;  
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* School Banner Section */
+.school-banner {
+    background-color: #3FB760;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.school-banner h1 {
+    font-size: 60px;
+}
+
+.school-banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.quick-links {
+    display: flex; /* Learned this from one of my best friends who is a CS major */
+    justify-content: center;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: white;
+    position: relative; /* to keep the images and box in place */
+}
+
+.link-card {
+    text-align: center;
+    width: 300px;
+    height: 210px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* I learned this from one of my best friends who's in CS majors */
+    position: relative; /* Rin order to keep the text on top */
+    overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.link-card img {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; /* the image will be placed behind the text */
+    top: 0;
+    left: 0;
+    object-fit: cover; /* image fits inside the box */
+    z-index: 1; /* so the image stays behind the text and not mess up */
+    opacity: 0.6; /* i coldnt make the image lighter manually */
+
+   
+   
+   
+   
+   
+   
+    /* the reason i made a lot of comments on this part was to clarify the struggle of putting a placeholder for your image since i protoype where goes where first */
+}
+
+
+
+.link-card h3 {
+    position: relative; 
+    font-size: 25px;
+    margin: 0;
+    z-index: 2; 
+    color: #000; 
+}
+
+
+
+
+
+
+
+
+
+
+/* Info sections */
+.info-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.info-card {
+    background-color: white;
+    width: 30%;
+    height: 400px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden; /* Ensures images do not overflow */
+}
+
+.info-card img {
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    object-fit: cover; 
+    opacity: 0.6; 
+}
+
+.info-card h2, .info-card p, .info-card a {
+    position: relative; /* text stays in front of the image */
+    z-index: 2; 
+}
+
+.info-card h2 {
+    font-size: 35px;
+    color: #0055a5;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.info-card a {
+    color: #0055a5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+footer {
+    text-align: center;
+    background-color: #3FB760;
+    color: white;
+    padding: 20px;
+}
+
